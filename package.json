@@ -1,0 +1,14 @@
+{
+  "name": "projet3",
+  "version": "1.0.0",
+  "description": "Projet 3 OC",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./sass/main.scss:./public/css/style.css"
+  },
+  "keywords": [
+    "\u001b[2~\u001b[F\u001b[2~\u001b[5~"
+  ],
+  "author": "Manon Hoffmann",
+  "license": "ISC"
+}

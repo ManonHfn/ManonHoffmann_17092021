@@ -4,11 +4,14 @@
   "description": "Projet 3 OC",
   "main": "index.js",
   "scripts": {
-    "sass": "sass --watch ./sass/main.scss:./public/css/style.css"
+    "sass": "sass --watch sass/styles.scss:./../styles.css"
   },
   "keywords": [
     "\u001b[2~\u001b[F\u001b[2~\u001b[5~"
   ],
   "author": "Manon Hoffmann",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "sass": "^1.42.1"
+  }
 }

@@ -42,26 +42,66 @@ body{
   padding-bottom: 15%;
 }
 .fonctionnement{
-  padding-left: 5%;
+  padding-left: 10%;
 }
 .fonctionnement_box{
   display: flex;
+  background-color: #ece9e9a9;
+  border-radius: 20%;
+  box-shadow: 0px 5px 6px 0px rgba(0, 0, 0, 0.2);
+  font-size: 12px;
+  width: 80%;
+  height: 10px;
 }
 .fonctionnement_box p{
   margin:0%;
 }
+.fonctionnement_number{
+  background-color: #9356dc;
+  border-radius: 100%;
+  padding-right: 10px;
+}
 .restaurants{
   background-color: #ece9e9a9;
-}
-.restaurants h2{
-  padding-left: 5%;
+  padding-left: 10%;
+  padding-bottom: 10%;
 }
 .restaurants_box{
-
+  border-radius: 10%;
+  background-color: white;
+  width: 90%;
+}
+.restaurants_box p{
+  margin: 0%;
+}
+.restaurants_box h3{
+  margin: 0%;
+}
+.image_box{
+  height: 200px;
+  width: 100%;
+  border-top-left-radius: 10%;
+  border-top-right-radius: 10%;
+}
+.icon_hearts{
+  display: flex;
+  justify-content: flex-end;
+}
+.restaurants_new{
+  color: rgba(0, 31, 0, 0.575);
+  font-weight: bold;
+  font-size: 19px;
+  padding: 4px;
+  background-color: #99E2D0;
+  position: absolute;
+  bottom: -26px;
+  left: 234px;
+  margin-top: 5px;
 }
 footer{
   background-color: rgba(51, 50, 50, 0.925);
   padding-bottom: 10px;
+  color: white;
 }
 .footer_logo{
   width: 120px;
@@ -70,3 +110,4 @@ footer{
   padding-left: 30px;
   font-family: Shrikhand, "cursive";
   font-size: 25px;
+}

@@ -20,9 +20,10 @@ body{
   width: 100%;
   background-color: #cecece;
   border-bottom: 1px;
+  align-items: center;
 }
-.localisation_icon{
-
+.localisation p{
+margin-left: 5%;
 }
 .reservation h1{
   margin:0%;
@@ -34,10 +35,24 @@ body{
   padding-bottom: 10%;
 }
 .reservation a{
-  
+  text-decoration: none;
+  color: white;
+}
+.reservation_btn{
+  text-decoration: none;
+  color: white;
+  border-radius: 50px;
+  background: rgb(239,116,218);
+  background: linear-gradient(0deg, rgba(239,116,218,1) 0%, rgba(165,92,219,1) 100%);
+  padding: 6%;
+  margin-left: 11%;
+  width: 70%;
+}
+a:link {
+  text-decoration: none;
 }
 .reservation{
-  background-color:#ece9e9a9;
+  background-color: #f6f6f6;
   text-align: center;
   padding-bottom: 15%;
 }
@@ -46,7 +61,7 @@ body{
 }
 .fonctionnement_box{
   display: flex;
-  background-color: #ece9e9a9;
+  background-color: #f6f6f6;
   border-radius: 20%;
   box-shadow: 0px 5px 6px 0px rgba(0, 0, 0, 0.2);
   font-size: 12px;
@@ -70,6 +85,7 @@ body{
   border-radius: 10%;
   background-color: white;
   width: 90%;
+  position:relative;
 }
 .restaurants_box p{
   margin: 0%;
@@ -94,9 +110,12 @@ body{
   padding: 4px;
   background-color: #99E2D0;
   position: absolute;
-  bottom: -26px;
-  left: 234px;
+  bottom: 200px;
+  left: 160px;
   margin-top: 5px;
+}
+.restaurants_description{
+  padding-left: 5%;
 }
 footer{
   background-color: rgba(51, 50, 50, 0.925);

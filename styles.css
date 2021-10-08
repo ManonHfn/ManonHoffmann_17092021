@@ -39,8 +39,6 @@ margin-left: 5%;
   color: white;
 }
 .reservation_btn{
-  text-decoration: none;
-  color: white;
   border-radius: 50px;
   background: rgb(165,92,219,1);
   background: linear-gradient(0deg, rgb(165,92,219,1) 0%, rgb(239,116,218) 100%);
@@ -48,8 +46,9 @@ margin-left: 5%;
   margin-left: 11%;
   width: 70%;
 }
-a:link {
+a{
   text-decoration: none;
+  color: white;
 }
 .reservation{
   background-color: #f6f6f6;
@@ -66,6 +65,7 @@ a:link {
   box-shadow: 0px 5px 6px 0px rgba(0, 0, 0, 0.2);
   width: 80%;
   height: 50px;
+  position: relative;
 }
 .fonctionnement_box p{
   margin:0%;
@@ -75,6 +75,13 @@ a:link {
   font-size: 16px;
 }
 .fonctionnement_number{
+  position: absolute;
+  left: -15px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+.fonctionnement_pill{
   background-color: #9356dc;
   border-radius: 100%;
   padding-right: 10px;
@@ -137,10 +144,12 @@ footer{
 }
 .footer_logo{
   width: 100px;
-  color: white;
   padding-top: 5px;
   padding-left: 30px;
   font-family: Shrikhand, "cursive";
+}
+.footer_logo path{
+  fill:white;
 }
 .footer_list{
   color: white;

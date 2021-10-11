@@ -66,6 +66,8 @@ a{
   width: 80%;
   height: 50px;
   position: relative;
+  margin-bottom: 20px;
+  margin-left: 10px;
 }
 .fonctionnement_box p{
   margin:0%;
@@ -73,6 +75,7 @@ a{
   align-items: center;
   padding: 20px;
   font-size: 16px;
+  
 }
 .fonctionnement_number{
   position: absolute;
@@ -123,6 +126,9 @@ a{
 .icon_hearts{
   display: flex;
   justify-content: flex-end;
+  position:absolute;
+  left: 260px;
+  bottom:15px;
 }
 .restaurants_new{
   color: rgba(0, 31, 0, 0.575);
@@ -137,6 +143,7 @@ a{
 }
 .restaurants_description{
   padding-left: 5%;
+  position: relative;
 }
 footer{
   background-color: rgba(51, 50, 50, 0.925);

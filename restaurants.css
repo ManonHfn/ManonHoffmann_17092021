@@ -36,20 +36,22 @@ body{
     padding-left: 14px;
     padding-right: 14px;  
   }
-.header_img{
+
+.header_img img {
+  object-fit: cover;
   height: 250px;
-  display: flex;
-  justify-content: center;
-  position: relative;
+  width: 100%;
 }
+
 .menu{
   width: 100%;
   background: #faf4f4;
   border-top-left-radius: 30px;
   border-top-right-radius: 30px;
   box-shadow: 0px 0px 10px rgba(131, 129, 129, 0.452);
-  position: absolute;
-  top:300px;
+  margin-top: -100px;
+  position: relative;
+  padding-left: 15px;
 }
 .title{
   font-family: shrikhand, "cursive";
@@ -70,7 +72,7 @@ body{
 .menu_bloc{
   display: flex;
   justify-content: space-between;
-  width: 100%;
+  width: 90%;
   height: 85px;
   background: white;
   border-radius: 20px;
@@ -79,14 +81,15 @@ body{
   overflow: hidden;
 }
 .menu_bloc h3{
-  margin-top: 15px;
+  margin-top: 18px;
   overflow: hidden;
   text-overflow: ellipsis;
 }
 .menu_bloc_text{
-  font-size: 18px;
+  font-size: 17px;
   white-space: nowrap;
   overflow: hidden;
+  padding-left: 5px;
 }
 .menu_bloc p{
   margin-top: -15px;
@@ -109,6 +112,7 @@ body{
 .btn_order_parent{
   display: flex;
   justify-content: center;
+  padding-bottom: 50px;
 }
 .btn_order{
   display: flex;
@@ -147,4 +151,8 @@ footer{
 }
 ul{
   list-style: none;
+  text-decoration: none;
+}
+.footer_list a{
+  text-decoration: none;
 }

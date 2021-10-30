@@ -1,81 +1,30 @@
-body{
+@import "./_variables.scss";
+@import "./components/_headers.scss";
+@import "./components/_reservation.scss";
+
+body {
   margin: 0px;
   padding: 0px;
   font-family: roboto;
 }
-.header_logo {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  border-bottom: solid 2px #b6b5b5;
-  width: 100%;
-  height: 100px;
-  box-shadow: 0px 5px 6px 0px rgba(0, 0, 0, 0.2);
-}
-.localisation{
-  display: flex;
-  justify-content: center;
-  text-align: center;
-  width: 100%;
-  background-color: #cecece;
-  border-bottom: 1px;
-  align-items: center;
-}
-.localisation p{
-margin-left: 5%;
-}
-.reservation h1{
-  margin:0%;
-  font-size: 32px;
-  padding-top: 15%;
-}
-.reservation p{
-  font-size: 18px;
-  padding-bottom: 10%;
-}
-.reservation a{
+
+a {
   text-decoration: none;
   color: white;
 }
-.reservation_btn{
-  border-radius: 50px;
-  background: rgb(165,92,219,1);
-  background: linear-gradient(0deg, rgb(165,92,219,1) 0%, rgb(239,116,218) 100%);
-  padding: 6%;
-  margin-left: 11%;
-  width: 70%;
-}
-.reservation_btn:hover {
-  transform: scale(0.96);
-  transition: 0.5s;
-  opacity: 0.9;
-  box-shadow: 0px 7px 10px #969696;
-}
-a, a:hover, a:visited {
-  text-decoration: none;
-  color: black;
-}
-
-footer a{
-  text-decoration: none;
+.reservation-btn a:link,
+.btn-container__actual a:visited {
   color: white;
 }
-
-.reservation-btn a:link, .btn-container__actual a:visited {
-  color: white;
-}
-
-.reservation{
+.reservation {
   background-color: #f6f6f6;
   text-align: center;
   padding-bottom: 15%;
 }
-
-.fonctionnement{
+.fonctionnement {
   padding-left: 10%;
 }
-.fonctionnement_box{
+.fonctionnement_box {
   display: flex;
   background-color: #f6f6f6;
   border-radius: 15px;
@@ -86,22 +35,21 @@ footer a{
   margin-bottom: 20px;
   margin-left: 10px;
 }
-.fonctionnement_box p{
-  margin:0%;
+.fonctionnement_box p {
+  margin: 0%;
   display: flex;
   align-items: center;
   padding: 20px;
   font-size: 16px;
-  
 }
-.fonctionnement_number{
+.fonctionnement_number {
   position: absolute;
   left: -15px;
   height: 100%;
   display: flex;
   align-items: center;
 }
-.fonctionnement_pill{
+.fonctionnement_pill {
   background-color: #9356dc;
   border-radius: 100%;
   padding-right: 10px;
@@ -111,7 +59,7 @@ footer a{
   padding-top: 3px;
 }
 
-.fonctionnement_icone{
+.fonctionnement_icone {
   font-style: normal;
   font-variant: normal;
   text-rendering: auto;
@@ -120,87 +68,82 @@ footer a{
   padding-left: 34px;
 }
 .fonctionnement_box:hover {
-  background-color:#f7a7ea;
+  background-color: #f7a7ea;
   transition: 0.4s;
 }
 
 .fonctionnement_box:hover i {
   color: #f7a7ea;
 }
-#restaurants{
+#restaurants {
   background-color: #ece9e9a9;
-  padding: 0 10% 10% 10%;
+  padding-left: 10%;
+  padding-bottom: 10%;
 }
-
-.restaurants_containeur{
-  padding-bottom: 20px;
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  gap: 20px;
-}
-
-.restaurants_box{
+.restaurants_box {
   border-radius: 25px;
   background-color: white;
-  position:relative;
-  width: 100%;
+  width: 90%;
+  position: relative;
+  margin-bottom: 20px;
 }
-.restaurants_box:hover{
-    transform: scale(1.025);
-    box-shadow: 0px 0px 10px rgb(239,116,218);
-    transition: 0.5s;
-
+.restaurants_box:hover {
+  transform: scale(1.025);
+  box-shadow: 0px 0px 10px rgb(239, 116, 218);
+  transition: 0.5s;
 }
-.restaurants_box p{
+.restaurants_box p {
   margin: 0%;
 }
-.restaurants_box h3{
+.restaurants_box h3 {
   margin: 0%;
 }
-.image_box{
+.image_box {
   height: 200px;
   width: 100%;
   border-top-left-radius: 25px;
   border-top-right-radius: 25px;
   object-fit: cover;
 }
-
-.restaurants_new{
+.icon_hearts {
+  display: flex;
+  justify-content: flex-end;
+  position: absolute;
+  left: 260px;
+  bottom: 15px;
+}
+.restaurants_new {
   color: rgba(0, 31, 0, 0.575);
   font-weight: bold;
   font-size: 19px;
   padding: 4px;
-  background-color: #99E2D0;
+  background-color: #99e2d0;
   position: absolute;
-  top: 25px;
-  right: 0px;
-  margin-right: 20px;
+  top: 20px;
+  left: 205px;
+  margin-top: 5px;
 }
-.restaurants_description{
-  padding: 10px 25px;
+.restaurants_description {
+  padding-left: 5%;
   position: relative;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
 }
-footer{
+footer {
   background-color: rgba(51, 50, 50, 0.925);
   padding-bottom: 10px;
 }
-.footer_logo{
+.footer_logo {
   width: 100px;
   padding-top: 5px;
   padding-left: 30px;
   font-family: Shrikhand, "cursive";
 }
-.footer_logo path{
-  fill:white;
+.footer_logo path {
+  fill: white;
 }
-.footer_list{
+.footer_list {
   color: white;
 }
-ul{
+ul {
   list-style: none;
 }
 .loader {
@@ -214,21 +157,21 @@ ul{
   right: 0;
   bottom: 0;
   border: 10px solid #f3f3f3;
-  border-left-color: #9356DC;
-  border-right-color: #FF79DA;
+  border-left-color: #9356dc;
+  border-right-color: #ff79da;
   border-radius: 200px;
   -webkit-animation: spin 3s ease-in-out;
-          animation: spin 3s ease-in-out;
+  animation: spin 3s ease-in-out;
   -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
   visibility: hidden;
 }
 .loadingbg {
   background-color: white;
   -webkit-animation: bg ease-in-out 3s;
-          animation: bg ease-in-out 3s;
+  animation: bg ease-in-out 3s;
   -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
   z-index: 2;
   position: fixed;
   top: 0;
@@ -243,7 +186,7 @@ ul{
   }
   100% {
     -webkit-appearance: none;
-            appearance: none;
+    appearance: none;
   }
 }
 @keyframes bg {
@@ -252,34 +195,34 @@ ul{
   }
   100% {
     -webkit-appearance: none;
-       -moz-appearance: none;
-            appearance: none;
+    -moz-appearance: none;
+    appearance: none;
   }
 }
 
 @-webkit-keyframes spin {
   0% {
     -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
+    transform: rotate(0deg);
     opacity: 1;
     visibility: visible;
   }
   25% {
     -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
+    transform: rotate(360deg);
   }
   50% {
     -webkit-transform: rotate(720deg);
-            transform: rotate(720deg);
+    transform: rotate(720deg);
   }
   75% {
     -webkit-transform: rotate(1040deg);
-            transform: rotate(1040deg);
+    transform: rotate(1040deg);
     opacity: 0.5;
   }
   100% {
     -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
+    transform: rotate(0deg);
     opacity: 0;
   }
 }
@@ -287,60 +230,72 @@ ul{
 @keyframes spin {
   0% {
     -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
+    transform: rotate(0deg);
     opacity: 1;
     visibility: visible;
   }
   25% {
     -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
+    transform: rotate(360deg);
   }
   50% {
     -webkit-transform: rotate(720deg);
-            transform: rotate(720deg);
+    transform: rotate(720deg);
   }
   75% {
     -webkit-transform: rotate(1040deg);
-            transform: rotate(1040deg);
+    transform: rotate(1040deg);
     opacity: 0.5;
   }
   100% {
     -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
+    transform: rotate(0deg);
     opacity: 0;
   }
 }
 .heart_full {
+  position: absolute;
   font-size: 40px;
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
   font-size: 23px;
-
-  background-image: -webkit-gradient(linear, left top, right top, from(#9356DC), to(#FF79DA));
-  background-image: linear-gradient(to right, #9356DC, #FF79DA);
+  left: 1px;
+  bottom: 0px;
+  top: -20px;
+  background-image: -webkit-gradient(
+    linear,
+    left top,
+    right top,
+    from(#9356dc),
+    to(#ff79da)
+  );
+  background-image: linear-gradient(to right, #9356dc, #ff79da);
   -webkit-clip-path: circle(0%);
-          clip-path: circle(0%);
+  clip-path: circle(0%);
 }
 
 .heart_empty {
   position: absolute;
   font-size: 23px;
   color: rgba(24, 23, 23, 0.678);
+  left: 1px;
+  bottom: 0px;
+  top: -20px;
 }
 
 .icon_hearts:hover .heart_full {
   -webkit-animation: heart-appear 600ms ease-in-out;
-          animation: heart-appear 600ms ease-in-out;
+  animation: heart-appear 600ms ease-in-out;
   -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
 }
 
 .icon_hearts:hover .heart_empty {
   -webkit-animation: heart-disappear 600ms ease-in-out;
-          animation: heart-disappear 600ms ease-in-out;
+  animation: heart-disappear 600ms ease-in-out;
   -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
 }
 @-webkit-keyframes heart-disappear {
   0% {
@@ -363,25 +318,26 @@ ul{
 @-webkit-keyframes heart-appear {
   0% {
     -webkit-clip-path: circle(0%);
-            clip-path: circle(0%);
+    clip-path: circle(0%);
   }
   100% {
     visibility: visible;
     -webkit-clip-path: circle(100%);
-            clip-path: circle(100%);
+    clip-path: circle(100%);
   }
 }
 @keyframes heart-appear {
   0% {
     -webkit-clip-path: circle(0%);
-            clip-path: circle(0%);
+    clip-path: circle(0%);
   }
   100% {
     visibility: visible;
     -webkit-clip-path: circle(100%);
-            clip-path: circle(100%);
+    clip-path: circle(100%);
   }
-}@-webkit-keyframes heart-disappear {
+}
+@-webkit-keyframes heart-disappear {
   0% {
     opacity: 1;
   }
@@ -402,38 +358,38 @@ ul{
 @-webkit-keyframes heart-appear {
   0% {
     -webkit-clip-path: circle(0%);
-            clip-path: circle(0%);
+    clip-path: circle(0%);
   }
   100% {
     visibility: visible;
     -webkit-clip-path: circle(100%);
-            clip-path: circle(100%);
+    clip-path: circle(100%);
   }
 }
 @keyframes heart-appear {
   0% {
     -webkit-clip-path: circle(0%);
-            clip-path: circle(0%);
+    clip-path: circle(0%);
   }
   100% {
     visibility: visible;
     -webkit-clip-path: circle(100%);
-            clip-path: circle(100%);
+    clip-path: circle(100%);
   }
 }
 @media screen and (min-width: 1000px) {
-  .reservation{
+  .reservation {
     padding-bottom: 3%;
   }
-  .reservation h1{
+  .reservation h1 {
     padding-top: 3%;
   }
-  .reservation p{
+  .reservation p {
     padding-bottom: 3%;
   }
-  .reservation_btn{
+  .reservation_btn {
     padding: 1%;
-    margin-left:40%;
+    margin-left: 40%;
     width: 20%;
   }
   .fonctionnement {
@@ -449,9 +405,9 @@ ul{
     margin-top: 35px;
     width: 100%;
   }
-  .fonctionnement_box p{
-  margin: 6px;
-  font-size: 16px;
+  .fonctionnement_box p {
+    margin: 6px;
+    font-size: 16px;
   }
   .fonctionnement h2 {
     padding-left: 10px;
@@ -467,19 +423,46 @@ ul{
     text-align: center;
     flex-direction: column;
     margin-top: 20px;
+    padding-left: 0px;
     padding-bottom: 3px;
   }
-  .restaurants_box {
-    width: 49%;
+  .restaurants_containeur {
+    display: -ms-grid;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 30px;
+    padding-left: 10px;
+    padding-right: 10px;
   }
-  #restaurants h2{
+  #restaurants h2 {
     text-align: center;
+  }
+  .heart_empty {
+    left: -22px;
+  }
+  .heart_full {
+    left: -22px;
+  }
+  .restaurants_new {
+    left: 180px;
   }
   .footer_list ul {
     display: flex;
     flex-wrap: wrap;
   }
-  .footer_list li{
+  .footer_list li {
     padding-right: 40px;
+  }
+}
+@media screen and (min-width: 375px) and (max-width: 1000px) {
+  .restaurants_new {
+    left: 557px;
+  }
+  .heart_empty {
+    left: 354px;
+  }
+  .heart_full {
+    left: 354px;
   }
 }

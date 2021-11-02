@@ -171,7 +171,7 @@ body {
     padding-left: 30px;
     font-family: Shrikhand, "cursive";
   }
-  .footer_logo path {
+  path {
     fill: white;
   }
   .footer_list {
@@ -181,7 +181,7 @@ body {
     list-style: none;
     text-decoration: none;
   }
-  .footer_list a {
+  a {
     text-decoration: none;
     color: white;
   }
@@ -266,8 +266,6 @@ body {
       transform: translateY(15px);
     }
   }
-  
-  
   
   .menu_bloc {
     animation: menu-appear 0.9s;
